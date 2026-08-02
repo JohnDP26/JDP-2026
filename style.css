@@ -145,45 +145,31 @@ nav ul li a.active::after{
 @media (max-width:768px){
 
     nav{
-
-        padding:18px 22px;
-
-    }
-
-    .menu-toggle{
-
-        display:block;
-
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+        padding:20px;
     }
 
     nav ul{
-
-        display:none;
-
+        display:flex;
+        flex-direction:column;
+        width:100%;
+        gap:12px;
     }
 
-    nav ul.show{
+    nav ul li{
+        width:100%;
+    }
 
-        display:flex;
+    nav ul li a{
+        display:block;
+        width:100%;
+        padding:10px 0;
+    }
 
-        position:absolute;
-
-        top:85px;
-        left:20px;
-        right:20px;
-
-        flex-direction:column;
-
-        gap:20px;
-
-        background:white;
-
-        border-radius:20px;
-
-        padding:25px;
-
-        box-shadow:0 20px 40px rgba(0,0,0,.12);
-
+    .menu-toggle{
+        display:none;
     }
 
 }
